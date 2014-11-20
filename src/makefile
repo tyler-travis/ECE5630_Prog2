@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -Wall -c -g 
 LDFLAGS = -lm
-SOURCES = part3.cpp
+SOURCES = part2.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE = exec
 
