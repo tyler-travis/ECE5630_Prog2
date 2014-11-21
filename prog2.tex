@@ -33,6 +33,9 @@
 \usepackage{listings} % Required for insertion of code
 \usepackage{courier} % Required for the courier font
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{caption}
+\usepackage{subcaption}
+
 
 % Margins
 \topmargin=-0.45in
@@ -150,7 +153,7 @@
 \newcommand{\hmwkClass}{ECE\ 5630} % Course/class
 \newcommand{\hmwkClassTime}{3:00pm} % Class/lecture time
 \newcommand{\hmwkClassInstructor}{Scott Budge} % Teacher/lecturer
-\newcommand{\hmwkAuthorName}{Tyler Travis} % Your name
+\newcommand{\hmwkAuthorName}{Tyler Travis A01519795} % Your name
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -190,32 +193,122 @@
 % To have just one problem per page, simply put a \clearpage after each problem
 
 \begin{homeworkProblem}
-Listing \ref{src/part1} shows Part 1 of the assignment.
-Listing \ref{plots/Part1-a-Impulse} shows the the Impulse reponse
+\begin{homeworkSection}{(a)}
+%Listing \ref{src/part1} shows Part 1 of the assignment.\\
+Figure 1 shows the Impulse response of the filter h[n].
 
-\begin{center}
+\begin{figure}[h]
+\centering
 \includegraphics[width=0.75\columnwidth]{plots/Part1-a-Impulse}
-\end{center}
+\caption{Impulse Response}
+\end{figure}
 
-\cppscript{src/part1}{Sample Perl Script With Highlighting}
+\end{homeworkSection}
+\begin{homeworkSection}{(b)}
 
-\lipsum[1]
+Figure 2 shows the Magnitude and Phase response of the filter h[n].
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\columnwidth]{plots/Part1-b-Mag_Phase}
+\caption{Impulse Response}
+\end{figure}
+\end{homeworkSection}
+
+%\cppscript{src/part1}{Sample Perl Script With Highlighting}
+
 \end{homeworkProblem}
-
+\clearpage
 %----------------------------------------------------------------------------------------
 %	PROBLEM 2
 %----------------------------------------------------------------------------------------
 
 \begin{homeworkProblem}
-\lipsum[2]
+Listing \ref{src/part1} shows the first program.
 
-\problemAnswer{
-\begin{center}
-\includegraphics[width=0.75\columnwidth]{plots/Part2-b-x_10} % Example image
-\end{center}
+\cppscript{src/part1}{Program 1 - part1.cpp}
+\begin{homeworkSection}{(a)}
+The number of multiples is
+\end{homeworkSection}
+\begin{homeworkSection}{(b)}
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-x_10}
+\caption{x[n]}
+\label{[fig:x_10]}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-y_10}
+\caption{y[n]}
+\label{[fig:y_10]}
+\end{subfigure}
+\caption{Input(a) and Output(b) with f = 10Hz}
+\end{figure}
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-x_40}
+\caption{x[n]}
+\label{[fig:x_40]}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-y_40}
+\caption{y[n]}
+\label{[fig:y_40]}
+\end{subfigure}
+\caption{Input(a) and Output(b) with f = 40Hz}
+\end{figure}
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-x_150}
+\caption{x[n]}
+\label{[fig:x_150]}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-y_150}
+\caption{y[n]}
+\label{[fig:y_150]}
+\end{subfigure}
+\caption{Input(a) and Output(b) with f = 150Hz}
+\end{figure}
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-x_350}
+\caption{x[n]}
+\label{[fig:x_350]}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-y_350}
+\caption{y[n]}
+\label{[fig:y_350]}
+\end{subfigure}
+\caption{Input(a) and Output(b) with f = 350Hz}
+\end{figure}
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-x_500}
+\caption{x[n]}
+\label{[fig:x_500]}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{plots/Part2-b-y_500}
+\caption{y[n]}
+\label{[fig:y_500]}
+\end{subfigure}
+\caption{Input(a) and Output(b) with f = 500Hz}
+\end{figure}
+\end{homeworkSection}
+%\problemAnswer{
+%\begin{center}
+%\includegraphics[width=0.75\columnwidth]{plots/Part2-b-x_10} % Example image
+%end{center}
 
-\lipsum[3-5]
-}
+
+%}
 \end{homeworkProblem}
 
 %----------------------------------------------------------------------------------------
