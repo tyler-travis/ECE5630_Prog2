@@ -193,29 +193,42 @@
 % To have just one problem per page, simply put a \clearpage after each problem
 
 \begin{homeworkProblem}
-\begin{homeworkSection}{(a)}
-%Listing \ref{src/part1} shows Part 1 of the assignment.\\
-Figure 1 shows the Impulse response of the filter h[n].
+  Design a linear-phase FIR digital filter with the following characteristics:
+  \begin{itemize}
+    \item 256 coefficients
+    \item Lowpass filter
+    \item Passband frequency of 300 Hz with unit gain.
+    \item Stopband frequency of 400 Hz with zero gain.
+    \item A signal sample rate of 11.025 kHz.
+  \end{itemize}
+  \begin{homeworkSection}{(a)}
+    Plot the impuse resonse h(n) of the filter.
+    \begin{center}
+      \noindent\rule{6.5in}{0.4pt}
+    \end{center}
+    Figure 1 shows the Impulse response of the filter h[n].
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.75\columnwidth]{plots/Part1-a-Impulse}
-\caption{Impulse Response}
-\end{figure}
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.75\columnwidth]{plots/Part1-a-Impulse}
+      \caption{Impulse Response}
+    \end{figure}
 
-\end{homeworkSection}
-\begin{homeworkSection}{(b)}
+  \end{homeworkSection}
+  \begin{homeworkSection}{(b)}
+    Plot the desired magnitude response, the actual magnitude response, and phase response.
+    \begin{center}
+      \noindent\rule{6.5in}{0.4pt}
+    \end{center}
 
-Figure 2 shows the Magnitude and Phase response of the filter h[n].
+    Figure 2 shows the Magnitude and Phase response of the filter h[n].
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.75\columnwidth]{plots/Part1-b-Mag_Phase}
-\caption{Impulse Response}
-\end{figure}
-\end{homeworkSection}
-
-%\cppscript{src/part1}{Sample Perl Script With Highlighting}
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.75\columnwidth]{plots/Part1-b-Mag_Phase}
+      \caption{Impulse Response}
+    \end{figure}
+  \end{homeworkSection}
 
 \end{homeworkProblem}
 \clearpage
@@ -224,84 +237,112 @@ Figure 2 shows the Magnitude and Phase response of the filter h[n].
 %----------------------------------------------------------------------------------------
 
 \begin{homeworkProblem}
-Listing \ref{src/part1} shows the first program.
+  In C or C++, write a program that performs the FIR filtering in the time domain. Your program should be written so that you can filter an infinite length signal.
+  \begin{center}
+    \noindent\rule{6.5in}{0.4pt}
+  \end{center}
+  Listing \ref{src/part1} shows the first program.
 
-\cppscript{src/part1}{Program 1 - part1.cpp}
-\begin{homeworkSection}{(a)}
-The number of multiples is
-\end{homeworkSection}
-\begin{homeworkSection}{(b)}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-x_10}
-\caption{x[n]}
-\label{[fig:2x_10]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-y_10}
-\caption{y[n]}
-\label{[fig:2y_10]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 10Hz}
-\end{figure}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-x_40}
-\caption{x[n]}
-\label{[fig:2x_40]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-y_40}
-\caption{y[n]}
-\label{[fig:2y_40]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 40Hz}
-\end{figure}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-x_150}
-\caption{x[n]}
-\label{[fig:2x_150]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-y_150}
-\caption{y[n]}
-\label{[fig:2y_150]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 150Hz}
-\end{figure}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-x_350}
-\caption{x[n]}
-\label{[fig:2x_350]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-y_350}
-\caption{y[n]}
-\label{[fig:2y_350]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 350Hz}
-\end{figure}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-x_500}
-\caption{x[n]}
-\label{[fig:2x_500]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part2-b-y_500}
-\caption{y[n]}
-\label{[fig:2y_500]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 500Hz}
-\end{figure}
-\end{homeworkSection}
+  \cppscript{src/part1}{Program 1 - part1.cpp}
+
+  \begin{homeworkSection}{(a)}
+    What are the number of multiplies and adds per output sample?
+    \begin{center}
+      \noindent\rule{6.5in}{0.4pt}
+    \end{center}
+    The number of multiples is
+  \end{homeworkSection}
+
+  \begin{homeworkSection}{(b)}
+    Verify that your filter coefficients are correct and your filter routine works as expected by running sinusoids through your filter and finding the magnitude response. (Remember to wait long enough that the filter transients have died down.) Do this for frequencies of $f=10Hz$, $f=40Hz$, $f=150Hz$, $f=350Hz$, and $f=500Hz$. Use a sample rate of 11.025kHz.
+
+    \begin{center}
+      \noindent\rule{6.5in}{0.4pt}
+    \end{center}
+
+    \begin{figure}[ht]
+      \centering
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-x_10}
+        \caption{x[n]}
+        \label{[fig:2x_10]}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-y_10}
+        \caption{y[n]}
+        \label{[fig:2y_10]}
+      \end{subfigure}
+      \caption{Input(a) and Output(b) with f = 10Hz}
+    \end{figure}
+
+    \begin{figure}[ht]
+      \centering
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-x_40}
+        \caption{x[n]}
+        \label{[fig:2x_40]}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-y_40}
+        \caption{y[n]}
+        \label{[fig:2y_40]}
+      \end{subfigure}
+      \caption{Input(a) and Output(b) with f = 40Hz}
+    \end{figure}
+
+    \begin{figure}[ht]
+      \centering
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-x_150}
+        \caption{x[n]}
+        \label{[fig:2x_150]}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-y_150}
+        \caption{y[n]}
+        \label{[fig:2y_150]}
+      \end{subfigure}
+      \caption{Input(a) and Output(b) with f = 150Hz}
+    \end{figure}
+
+    \begin{figure}[ht]
+      \centering
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-x_350}
+        \caption{x[n]}
+        \label{[fig:2x_350]}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-y_350}
+        \caption{y[n]}
+        \label{[fig:2y_350]}
+      \end{subfigure}
+      \caption{Input(a) and Output(b) with f = 350Hz}
+    \end{figure}
+
+    \begin{figure}[ht]
+      \centering
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-x_500}
+        \caption{x[n]}
+        \label{[fig:2x_500]}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part2-b-y_500}
+        \caption{y[n]}
+        \label{[fig:2y_500]}
+      \end{subfigure}
+      \caption{Input(a) and Output(b) with f = 500Hz}
+    \end{figure}
+
+  \end{homeworkSection}
+
+  \begin{homeworkSection}{(c)}
+    Compare the computed magnitude response with the theoretical magnitude resposne (obtained from Matlab). Record the magnitude response for each of the input frequencies and plot them on a plot with the theoretical magnitude response.\\\\
+    \begin{center}
+      \noindent\rule{6.5in}{0.4pt}
+    \end{center}
+  \end{homeworkSection}
 %\problemAnswer{
 %\begin{center}
 %\includegraphics[width=0.75\columnwidth]{plots/Part2-b-x_10} % Example image
@@ -317,86 +358,113 @@ The number of multiples is
 %----------------------------------------------------------------------------------------
 
 \begin{homeworkProblem}
+  In C or C++, write a program that preforms the FIR filtering in the frequency domain using fast convolution and at least a 512-point FFT. Consider the following:
+  \begin{itemize}
+    \item You may do \textbf{either} overlap-add or overlap-save in your prgram.
+    \item You only need to perform the FFT on the lowpass filter once.
+    \item The FFT must be a power of two.
+    \item The number of operations/output sample will vary as a function of the length of the FFT used.
+    \item Your program should be written so that you can filter an infinite length signal.
+  \end{itemize}
+  \begin{center}
+    \noindent\rule{6.5in}{0.4pt}
+  \end{center}
 
-Listing \ref{src/part2} shows the first program.
+  Listing \ref{src/part2} shows the first program.
 
-\cppscript{src/part2}{Program 1 - part2.cpp}
-\begin{homeworkSection}{(a)}
-The number of multiples is
-\end{homeworkSection}
+  \cppscript{src/part2}{Program 1 - part2.cpp}
 
-\begin{homeworkSection}{(b)}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-x_10}
-\caption{x[n]}
-\label{[fig:3x_10]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-y_10}
-\caption{y[n]}
-\label{[fig:3y_10]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 10Hz}
-\end{figure}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-x_40}
-\caption{x[n]}
-\label{[fig:3x_40]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-y_40}
-\caption{y[n]}
-\label{[fig:3y_40]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 40Hz}
-\end{figure}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-x_150}
-\caption{x[n]}
-\label{[fig:3x_150]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-y_150}
-\caption{y[n]}
-\label{[fig:3y_150]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 150Hz}
-\end{figure}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-x_350}
-\caption{x[n]}
-\label{[fig:3x_350]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-y_350}
-\caption{y[n]}
-\label{[fig:3y_350]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 350Hz}
-\end{figure}
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-x_500}
-\caption{x[n]}
-\label{[fig:3x_500]}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{plots/Part3-b-y_500}
-\caption{y[n]}
-\label{[fig:3y_500]}
-\end{subfigure}
-\caption{Input(a) and Output(b) with f = 500Hz}
-\end{figure}
-\end{homeworkSection}
+  \begin{homeworkSection}{(a)}
+    What are the number of multiplies and adds per output sample for both overlap-add and overlap-save?
+    \begin{center}
+      \noindent\rule{6.5in}{0.4pt}
+    \end{center}
+    The number of multiples is
+  \end{homeworkSection}
+
+  \begin{homeworkSection}{(b)}
+    Repeat 2(b)-(c) with the frequency domain filter program
+
+    \begin{center}
+      \noindent\rule{6.5in}{0.4pt}
+    \end{center}
+
+    \begin{figure}[ht]
+      \centering
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part3-b-x_10}
+        \caption{x[n]}
+        \label{[fig:3x_10]}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part3-b-y_10}
+        \caption{y[n]}
+        \label{[fig:3y_10]}
+      \end{subfigure}
+      \caption{Input(a) and Output(b) with f = 10Hz}
+    \end{figure}
+
+    \begin{figure}[ht]
+      \centering
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part3-b-x_40}
+        \caption{x[n]}
+        \label{[fig:3x_40]}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part3-b-y_40}
+        \caption{y[n]}
+        \label{[fig:3y_40]}
+      \end{subfigure}
+      \caption{Input(a) and Output(b) with f = 40Hz}
+    \end{figure}
+
+    \begin{figure}[ht]
+      \centering
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part3-b-x_150}
+        \caption{x[n]}
+        \label{[fig:3x_150]}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part3-b-y_150}
+        \caption{y[n]}
+        \label{[fig:3y_150]}
+      \end{subfigure}
+      \caption{Input(a) and Output(b) with f = 150Hz}
+    \end{figure}
+
+    \begin{figure}[ht]
+      \centering
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part3-b-x_350}
+        \caption{x[n]}
+        \label{[fig:3x_350]}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{plots/Part3-b-y_350}
+        \caption{y[n]}
+        \label{[fig:3y_350]}
+      \end{subfigure}
+      \caption{Input(a) and Output(b) with f = 350Hz}
+    \end{figure}
+
+    \begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+      \includegraphics[width=\textwidth]{plots/Part3-b-x_500}
+      \caption{x[n]}
+      \label{[fig:3x_500]}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+      \includegraphics[width=\textwidth]{plots/Part3-b-y_500}
+      \caption{y[n]}
+      \label{[fig:3y_500]}
+    \end{subfigure}
+    \caption{Input(a) and Output(b) with f = 500Hz}
+    \end{figure}
+
+  \end{homeworkSection}
 
 \end{homeworkProblem}
 %----------------------------------------------------------------------------------------
