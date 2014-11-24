@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.23)  21 NOV 2014 12:49
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.23)  24 NOV 2014 11:32
 entering extended mode
  %&-line parsing enabled.
 **prog2.tex
@@ -223,9 +223,6 @@ File: plots/Part2-b-x_40.jpg Graphic file (type jpg)
 File: plots/Part2-b-y_40.jpg Graphic file (type jpg)
 
 <use plots/Part2-b-y_40.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <plots/Part2-b-x_150.jpg, id=29, 560.0925pt x 417.56pt>
 File: plots/Part2-b-x_150.jpg Graphic file (type jpg)
 
@@ -234,9 +231,6 @@ File: plots/Part2-b-x_150.jpg Graphic file (type jpg)
 File: plots/Part2-b-y_150.jpg Graphic file (type jpg)
 
 <use plots/Part2-b-y_150.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <plots/Part2-b-x_350.jpg, id=31, 560.0925pt x 417.56pt>
 File: plots/Part2-b-x_350.jpg Graphic file (type jpg)
 
@@ -245,9 +239,6 @@ File: plots/Part2-b-x_350.jpg Graphic file (type jpg)
 File: plots/Part2-b-y_350.jpg Graphic file (type jpg)
 
 <use plots/Part2-b-y_350.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <plots/Part2-b-x_500.jpg, id=33, 560.0925pt x 417.56pt>
 File: plots/Part2-b-x_500.jpg Graphic file (type jpg)
 
@@ -255,33 +246,79 @@ File: plots/Part2-b-x_500.jpg Graphic file (type jpg)
 <plots/Part2-b-y_500.jpg, id=34, 562.1pt x 421.575pt>
 File: plots/Part2-b-y_500.jpg Graphic file (type jpg)
 
-<use plots/Part2-b-y_500.jpg>
+<use plots/Part2-b-y_500.jpg> [5 <./plots/Part2-b-x_10.jpg> <./plots/Part2-b-y_
+10.jpg>] [6 <./plots/Part2-b-x_40.jpg> <./plots/Part2-b-y_40.jpg> <./plots/Part
+2-b-x_150.jpg> <./plots/Part2-b-y_150.jpg> <./plots/Part2-b-x_350.jpg> <./plots
+/Part2-b-y_350.jpg>] [7 <./plots/Part2-b-x_500.jpg> <./plots/Part2-b-y_500.jpg>
+] (./src/part2.cpp [8
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+] [9])
+<plots/Part3-b-x_10.jpg, id=51, 560.0925pt x 417.56pt>
+File: plots/Part3-b-x_10.jpg Graphic file (type jpg)
 
-AED: lastpage setting LastPage [5 <./plots/Part2-b-x_10.jpg> <./plots/Part2-b-y
-_10.jpg>] [6 <./plots/Part2-b-x_40.jpg> <./plots/Part2-b-y_40.jpg> <./plots/Par
-t2-b-x_150.jpg> <./plots/Part2-b-y_150.jpg> <./plots/Part2-b-x_350.jpg> <./plot
-s/Part2-b-y_350.jpg>] [7 <./plots/Part2-b-x_500.jpg> <./plots/Part2-b-y_500.jpg
->] (./prog2.aux) ) 
+<use plots/Part3-b-x_10.jpg>
+<plots/Part3-b-y_10.jpg, id=52, 562.1pt x 421.575pt>
+File: plots/Part3-b-y_10.jpg Graphic file (type jpg)
+
+<use plots/Part3-b-y_10.jpg>
+<plots/Part3-b-x_40.jpg, id=53, 560.0925pt x 417.56pt>
+File: plots/Part3-b-x_40.jpg Graphic file (type jpg)
+
+<use plots/Part3-b-x_40.jpg>
+<plots/Part3-b-y_40.jpg, id=54, 562.1pt x 421.575pt>
+File: plots/Part3-b-y_40.jpg Graphic file (type jpg)
+
+<use plots/Part3-b-y_40.jpg>
+<plots/Part3-b-x_150.jpg, id=55, 560.0925pt x 417.56pt>
+File: plots/Part3-b-x_150.jpg Graphic file (type jpg)
+
+<use plots/Part3-b-x_150.jpg>
+<plots/Part3-b-y_150.jpg, id=56, 562.1pt x 421.575pt>
+File: plots/Part3-b-y_150.jpg Graphic file (type jpg)
+
+<use plots/Part3-b-y_150.jpg>
+<plots/Part3-b-x_350.jpg, id=57, 560.0925pt x 417.56pt>
+File: plots/Part3-b-x_350.jpg Graphic file (type jpg)
+
+<use plots/Part3-b-x_350.jpg>
+<plots/Part3-b-y_350.jpg, id=58, 562.1pt x 421.575pt>
+File: plots/Part3-b-y_350.jpg Graphic file (type jpg)
+
+<use plots/Part3-b-y_350.jpg>
+<plots/Part3-b-x_500.jpg, id=59, 560.0925pt x 417.56pt>
+File: plots/Part3-b-x_500.jpg Graphic file (type jpg)
+
+<use plots/Part3-b-x_500.jpg>
+<plots/Part3-b-y_500.jpg, id=60, 562.1pt x 421.575pt>
+File: plots/Part3-b-y_500.jpg Graphic file (type jpg)
+
+<use plots/Part3-b-y_500.jpg> AED: lastpage setting LastPage [10] [11 <./plots/
+Part3-b-x_10.jpg> <./plots/Part3-b-y_10.jpg> <./plots/Part3-b-x_40.jpg> <./plot
+s/Part3-b-y_40.jpg> <./plots/Part3-b-x_150.jpg> <./plots/Part3-b-y_150.jpg>]
+[12 <./plots/Part3-b-x_350.jpg> <./plots/Part3-b-y_350.jpg> <./plots/Part3-b-x_
+500.jpg> <./plots/Part3-b-y_500.jpg>] (./prog2.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3897 strings out of 256216
- 58319 string characters out of 1917072
- 223758 words of memory out of 1500000
- 7142 multiletter control sequences out of 10000+200000
+ 4015 strings out of 256216
+ 60342 string characters out of 1917072
+ 229758 words of memory out of 1500000
+ 7247 multiletter control sequences out of 10000+200000
  10408 words of font info for 36 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  36i,12n,58p,287b,1777s stack positions out of 5000i,500n,6000p,200000b,15000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/tex
-mf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/c
-mbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/
-fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr5.
-pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/t
-ype1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/urw/courier/ucrr8a.pfb
-></usr/share/texmf/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on prog2.pdf (7 pages, 556637 bytes).
+{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/b
+luesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/
+share/texmf/fonts/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/blue
+sky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr5.pfb></usr/share/
+texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
+cmti12.pfb></usr/share/texmf/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/tex
+mf/fonts/type1/urw/courier/ucrro8a.pfb>
+Output written on prog2.pdf (12 pages, 896227 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

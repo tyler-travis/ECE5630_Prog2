@@ -4,3 +4,6 @@
 \contentsline {section}{Problem 2}{4}
 \contentsline {subsection}{(a)}{5}
 \contentsline {subsection}{(b)}{5}
+\contentsline {section}{Problem 3}{8}
+\contentsline {subsection}{(a)}{10}
+\contentsline {subsection}{(b)}{10}
