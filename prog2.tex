@@ -208,7 +208,7 @@
     \end{center}
     Figure 1 shows the Impulse response of the filter h[n].
 
-    \begin{figure}[h]
+    \begin{figure}[ht]
       \centering
       \includegraphics[width=0.75\columnwidth]{plots/Part1-a-Impulse}
       \caption{Impulse Response}
@@ -223,7 +223,7 @@
 
     Figure 2 shows the Magnitude and Phase response of the filter h[n].
 
-    \begin{figure}[h]
+    \begin{figure}[ht]
       \centering
       \includegraphics[width=0.75\columnwidth]{plots/Part1-b-Mag_Phase}
       \caption{Impulse Response}
@@ -337,19 +337,24 @@
 
   \end{homeworkSection}
 
+  \clearpage
   \begin{homeworkSection}{(c)}
     Compare the computed magnitude response with the theoretical magnitude resposne (obtained from Matlab). Record the magnitude response for each of the input frequencies and plot them on a plot with the theoretical magnitude response.\\\\
     \begin{center}
       \noindent\rule{6.5in}{0.4pt}
     \end{center}
+    \begin{center}
+      \begin{tabular}{| l | l | l | l | l | l |}
+      \hline
+      & 10Hz & 40Hz & 150Hz & 350Hz & 500Hz \\ \hline
+      Matlab &  &  &  &  &  \\ \hline
+      Matlab &  &  &  &  &  \\ \hline
+      Matlab &  &  &  &  &  \\ \hline
+      \end{tabular}
+    \end{center}
   \end{homeworkSection}
-%\problemAnswer{
-%\begin{center}
-%\includegraphics[width=0.75\columnwidth]{plots/Part2-b-x_10} % Example image
-%end{center}
 
 
-%}
 \end{homeworkProblem}
 \clearpage
 
@@ -463,10 +468,39 @@
     \end{subfigure}
     \caption{Input(a) and Output(b) with f = 500Hz}
     \end{figure}
+    
+    \clearpage
+    \begin{center}
+      \begin{tabular}{| l | l | l | l | l | l |}
+      \hline
+      & 10Hz & 40Hz & 150Hz & 350Hz & 500Hz \\ \hline
+      Matlab &  &  &  &  &  \\ \hline
+      Matlab &  &  &  &  &  \\ \hline
+      Matlab &  &  &  &  &  \\ \hline
+      \end{tabular}
+    \end{center}
 
   \end{homeworkSection}
 
 \end{homeworkProblem}
+
+\clearpage
 %----------------------------------------------------------------------------------------
 
+%----------------------------------------------------------------------------------------
+%	PROBLEM 3
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}
+  Use the Matlab function wavread() to generate the samples of the file galway11\_mono\_45sec.wav. Use your programs from 2 and 3 above to filter the sound file. The results should be the same for both programs. Does the filter remove the high frequency components? Does the processed file sound as you expected? Write out the final results in a .wav file for the instructor to listen to.
+
+  \begin{center}
+    \noindent\rule{6.5in}{0.4pt}
+  \end{center}
+  The filter removes the high frequency components from the signal. You can no longer
+  hear the flute playing in the foreground. You can only hear the bass notes of deeper
+  instruments. The processed file sounds like what I expected, the filter completely
+  took out the higher sounds.
+
+\end{homeworkProblem}
 \end{document}

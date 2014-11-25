@@ -4,7 +4,8 @@
 \contentsline {section}{Problem 2}{5}
 \contentsline {subsection}{(a)}{6}
 \contentsline {subsection}{(b)}{6}
-\contentsline {subsection}{(c)}{6}
-\contentsline {section}{Problem 3}{9}
-\contentsline {subsection}{(a)}{11}
-\contentsline {subsection}{(b)}{12}
+\contentsline {subsection}{(c)}{9}
+\contentsline {section}{Problem 3}{10}
+\contentsline {subsection}{(a)}{12}
+\contentsline {subsection}{(b)}{13}
+\contentsline {section}{Problem 4}{16}
