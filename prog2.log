@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.23)  25 NOV 2014 10:17
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.23)  25 NOV 2014 17:25
 entering extended mode
  %&-line parsing enabled.
 **prog2.tex
@@ -199,7 +199,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 File: plots/Part1-a-Impulse.jpg Graphic file (type jpg)
 
 <use plots/Part1-a-Impulse.jpg>
-<plots/Part1-b-Mag_Phase.jpg, id=14, 1073.00874pt x 569.12625pt>
+<plots/Part1-b-Mag_Phase.jpg, id=14, 908.90154pt x 482.0834pt>
 File: plots/Part1-b-Mag_Phase.jpg Graphic file (type jpg)
 
 <use plots/Part1-b-Mag_Phase.jpg> [3 <./plots/Part1-a-Impulse.jpg>] [4 <./plots
@@ -260,12 +260,12 @@ b-y_10.jpg> <./plots/Part2-b-x_40.jpg> <./plots/Part2-b-y_40.jpg> <./plots/Part
 2-b-x_150.jpg> <./plots/Part2-b-y_150.jpg>] [8 <./plots/Part2-b-x_350.jpg> <./p
 lots/Part2-b-y_350.jpg> <./plots/Part2-b-x_500.jpg> <./plots/Part2-b-y_500.jpg>
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
@@ -319,29 +319,41 @@ rt3-b-x_150.jpg> <./plots/Part3-b-y_150.jpg> <./plots/Part3-b-x_350.jpg> <./plo
 ts/Part3-b-y_350.jpg> <./plots/Part3-b-x_500.jpg> <./plots/Part3-b-y_500.jpg>]
 [15
 
-] AED: lastpage setting LastPage [16
+] <plots/Part4-input.jpg, id=83, 562.1pt x 421.575pt>
+File: plots/Part4-input.jpg Graphic file (type jpg)
 
-] (./prog2.aux) ) 
+<use plots/Part4-input.jpg>
+<plots/Part4-output-time_conv.jpg, id=84, 562.1pt x 421.575pt>
+File: plots/Part4-output-time_conv.jpg Graphic file (type jpg)
+
+<use plots/Part4-output-time_conv.jpg>
+<plots/Part4-output-freq_conv.jpg, id=85, 562.1pt x 421.575pt>
+File: plots/Part4-output-freq_conv.jpg Graphic file (type jpg)
+
+<use plots/Part4-output-freq_conv.jpg> AED: lastpage setting LastPage [16
+
+ <./plots/Part4-input.jpg> <./plots/Part4-output-time_conv.jpg> <./plots/Part4-
+output-freq_conv.jpg>] (./prog2.aux) ) 
 Here is how much of TeX's memory you used:
- 4033 strings out of 256216
- 60626 string characters out of 1917072
- 228758 words of memory out of 1500000
- 7262 multiletter control sequences out of 10000+200000
+ 4054 strings out of 256216
+ 61206 string characters out of 1917072
+ 227758 words of memory out of 1500000
+ 7280 multiletter control sequences out of 10000+200000
  10408 words of font info for 36 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  36i,12n,58p,426b,1781s stack positions out of 5000i,500n,6000p,200000b,15000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texm
-f/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
-bx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/f
-onts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10
-.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr5.pfb></usr/share/texmf/fonts/
-type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb><
-/usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type
-1/urw/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/courier/ucrro8a.pfb>
-
-Output written on prog2.pdf (16 pages, 910511 bytes).
+{/usr/share/texmf/fonts/enc/dvips/base/8r
+.enc}</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/font
+s/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx9.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr5.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bl
+uesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/sha
+re/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/urw/co
+urier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/courier/ucrro8a.pfb>
+Output written on prog2.pdf (16 pages, 1012911 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

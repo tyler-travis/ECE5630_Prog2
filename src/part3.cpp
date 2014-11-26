@@ -50,62 +50,93 @@ int main(int argc, char** argv)
   std::ofstream y_dat("../data/y.dat");
   std::ofstream H_dat("../data/H.dat");
 
-  // input x signal of length N = 25600
-  complx x[N];
-
-  // output y signal of Length N = 25600
-  complx y[N+Nf-1];
-
-  // Generate input signal x[n]
-  for(int n = 0; n < N; ++n)
+  if(!strcmp(argv[1],"fft"))
   {
-    xIn >> in;
-    x[n].re = in;
-    x_dat << x[n].re << std::endl;
-  }
+    // input x signal of length N = 25600
+    complx x[N];
 
-  //const int nfft = 1024;
-  
-  int M = 256;
-  int overlap = M-1;
-  int nfft = 1024; 
-  int stepsize = nfft - overlap;
+    // output y signal of Length N = 25600
+    complx y[N+Nf-1];
 
-  complx H[nfft];
-  memcpy(H, h, sizeof(h));
-  // generate fft
-  fft842(0, nfft, H);
-  for(int i = 0; i < nfft; ++i)
-  {
-    H_dat << H[i].re << "\t" << H[i].im <<std::endl;
-  }
-
-  complx yt[nfft];
-  complx xt[nfft];
-
-  int position = 0;
-  while(position + nfft <= N)
-  {
-    for(int j = 0; j < nfft; ++j)
+    // Generate input signal x[n]
+    for(int n = 0; n < N; ++n)
     {
-      xt[j] = x[j + position];
+      xIn >> in;
+      x[n].re = in;
+      x_dat << x[n].re << std::endl;
     }
 
-    fft842(0, nfft, xt);
-    for(int k = 0; k < nfft; ++k)
+    //const int nfft = 1024;
+    
+    int M = 256;
+    int overlap = M-1;
+    int nfft = 1024; 
+    int stepsize = nfft - overlap;
+
+    complx H[nfft];
+    memcpy(H, h, sizeof(h));
+    // generate fft
+    fft842(0, nfft, H);
+    for(int i = 0; i < nfft; ++i)
     {
-      yt[k] = mult(xt[k], H[k]);
+      H_dat << H[i].re << "\t" << H[i].im <<std::endl;
     }
-    fft842(1, nfft, yt);
-    for(int j = M-1; j < nfft; ++j)
+
+    complx yt[nfft];
+    complx xt[nfft];
+
+    int position = 0;
+    while(position + nfft <= N)
     {
-      y[j-M+position] = yt[j];
+      for(int j = 0; j < nfft; ++j)
+      {
+        xt[j] = x[j + position];
+      }
+
+      fft842(0, nfft, xt);
+      for(int k = 0; k < nfft; ++k)
+      {
+        yt[k] = mult(xt[k], H[k]);
+      }
+      fft842(1, nfft, yt);
+      for(int j = M-1; j < nfft; ++j)
+      {
+        y[j-M+position] = yt[j];
+      }
+      position += stepsize;
     }
-    position += stepsize;
+    for(int n = 0; n < N; ++n)
+    {
+      y_dat << y[n].re << std::endl;
+    }
   }
-  for(int n = 0; n < N; ++n)
+  else
   {
-    y_dat << y[n].re << std::endl;
+    // input x signal of length N = 25600
+    double x[N];
+
+    // output y signal of Length N = 25600
+    double y[N];
+
+    // Generate input signal x[n]
+    for(int n = 0; n < N; ++n)
+    {
+      xIn >> in;
+      x[n] = in;
+      x_dat << x[n] << std::endl;
+    }
+
+    double temp;
+    for(int n = 0; n < N; ++n)
+    {
+      temp = 0;
+      for(int k = 0; k < Nf; ++k)
+      {
+        temp += x[n-k]*h[k].re;
+      }
+      y[n] = temp;
+      y_dat << y[n] << std::endl;
+    }
   }
   return 0;
 }

@@ -221,7 +221,7 @@
       \noindent\rule{6.5in}{0.4pt}
     \end{center}
 
-    Figure 2 shows the Magnitude and Phase response of the filter h[n].
+    Figure 2 shows the Magnitude and Phase response of the filter h[n]. The red line shows the ideal case of the filter with a cut off frequency of 350Hz.
 
     \begin{figure}[ht]
       \centering
@@ -250,7 +250,9 @@
     \begin{center}
       \noindent\rule{6.5in}{0.4pt}
     \end{center}
-    The number of multiples is
+    The number of multiples is $N$.\\
+    The number of adds is $N$.
+    
   \end{homeworkSection}
 
   \begin{homeworkSection}{(b)}
@@ -259,6 +261,7 @@
     \begin{center}
       \noindent\rule{6.5in}{0.4pt}
     \end{center}
+    Notice the y axis scale, especially on the 350Hz and 500Hz signals.
 
     \begin{figure}[ht]
       \centering
@@ -347,11 +350,11 @@
       \begin{tabular}{| l | l | l | l | l | l |}
       \hline
       & 10Hz & 40Hz & 150Hz & 350Hz & 500Hz \\ \hline
-      Matlab &  &  &  &  &  \\ \hline
-      Matlab &  &  &  &  &  \\ \hline
-      Matlab &  &  &  &  &  \\ \hline
+      Matlab & 1.0148 & 0.9925 & 0.9875 & 0.3674 & 0.0016 \\ \hline
+      Generated & 1.0156 & 0.9916 & 0.9874 & 0.3681 & 0.0022 \\ \hline
       \end{tabular}
     \end{center}
+    These results are within an acceptable tolerance.
   \end{homeworkSection}
 
 
@@ -365,7 +368,7 @@
 \begin{homeworkProblem}
   In C or C++, write a program that preforms the FIR filtering in the frequency domain using fast convolution and at least a 512-point FFT. Consider the following:
   \begin{itemize}
-    \item You may do \textbf{either} overlap-add or overlap-save in your prgram.
+    \item You may do \textbf{either} overlap-add or overlap-save in your program.
     \item You only need to perform the FFT on the lowpass filter once.
     \item The FFT must be a power of two.
     \item The number of operations/output sample will vary as a function of the length of the FFT used.
@@ -384,7 +387,8 @@
     \begin{center}
       \noindent\rule{6.5in}{0.4pt}
     \end{center}
-    The number of multiples is
+        The number of multiples is $N log_2(N)$.\\
+        The number of adds is $4N log_2(N)$.
   \end{homeworkSection}
 
   \begin{homeworkSection}{(b)}
@@ -471,14 +475,13 @@
     
     \clearpage
     \begin{center}
-      \begin{tabular}{| l | l | l | l | l | l |}
-      \hline
-      & 10Hz & 40Hz & 150Hz & 350Hz & 500Hz \\ \hline
-      Matlab &  &  &  &  &  \\ \hline
-      Matlab &  &  &  &  &  \\ \hline
-      Matlab &  &  &  &  &  \\ \hline
-      \end{tabular}
-    \end{center}
+    	\begin{tabular}{| l | l | l | l | l | l |}
+         	\hline
+         	& 10Hz & 40Hz & 150Hz & 350Hz & 500Hz \\ \hline
+         	Matlab & 1.0148 & 0.9925 & 0.9875 & 0.3674 & 0.0016 \\ \hline
+        	Generated & 1.0156 & 0.9916 & 0.9874 & 0.3681 & 0.0022 \\ \hline
+		\end{tabular}
+     \end{center}
 
   \end{homeworkSection}
 
@@ -501,6 +504,24 @@
   hear the flute playing in the foreground. You can only hear the bass notes of deeper
   instruments. The processed file sounds like what I expected, the filter completely
   took out the higher sounds.
-
+  \begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+      \includegraphics[width=\textwidth]{plots/Part4-input}
+      \caption{x[n]}
+      \label{[fig:4input]}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+      \includegraphics[width=\textwidth]{plots/Part4-output-time_conv}
+      \caption{y[n] time convolution}
+      \label{[fig:4outputTime]}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.4\textwidth}
+      \includegraphics[width=\textwidth]{plots/Part4-output-freq_conv}
+      \caption{y[n] frequency convolution}
+      \label{[fig:4outputFreq]}
+    \end{subfigure}
+    \caption{Input(a) and Output of Time Convolution (b) and Output of Frequency Convolution (c)}
+  \end{figure}
 \end{homeworkProblem}
 \end{document}
